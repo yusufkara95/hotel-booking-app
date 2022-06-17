@@ -29,7 +29,6 @@ export class CreateBookingComponent implements OnInit {
   }
 
   save(): void {
-
     var bookingById = Bookings.find(x => x.id == this.booking.id)!;
 
     if(bookingById ==  null || bookingById == undefined) {
